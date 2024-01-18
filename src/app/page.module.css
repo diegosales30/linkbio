@@ -14,14 +14,13 @@
   left: 0;
   right: 0;
   position: absolute; 
-  /* max-width: 1280px; */
   min-width: 380px;
   height: 100vh;
   z-index: 0;
+  object-fit: cover;
 }
 
 .grid {
- 
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 220px;
@@ -31,8 +30,6 @@
   min-width: 320px;
   margin-top: 20px;
   z-index: 1111;
- 
-  
 }
 
 .card {
@@ -42,14 +39,17 @@
   justify-content: space-between;
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
+  /* background: rgba(var(--card-rgb), 0.3); */
+  background:  rgba(14, 14, 14, 0.753);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
   margin-top: 15px;
-  
+}
+.card:hover {
+  background: rgba(var(--card-rgb), 0.5);
+  /* background:  rgba(14, 14, 14, 0.753); */
   
 }
-
 .card svg:last-child {
   transition: transform 0.3s ease-in-out;
   
@@ -71,10 +71,7 @@
   max-width: 30ch;
   
 }
-.card:hover {
-  background: rgba(var(--card-rgb), 0.1);
-  
-}
+
 
 .card:hover span {
   transform: translateX(4px);
@@ -98,7 +95,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 5px 0 rgb(209, 7, 118);
+  box-shadow: 0 0 5px 0 rgb(28, 93, 214);
+  border: 1px solid rgba(29, 29, 128, 0.733);
   cursor: pointer;
 }
 .boxName{
@@ -120,19 +118,20 @@
   border-radius: 100%;
 }
 .footer {
-  /* z-index: 111; */
+  z-index: 111;
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  
   width: 100%;
-  background-color: rgba(63, 63, 63, 0.253); /* Cor do fundo com transparência */
+  background-color: rgba(14, 14, 14, 0.753); /* Cor do fundo com transparência */
   color: white; /* Cor do texto no footer */
   padding: 10px;
   text-align: center;
   font-size: smaller;
-  height: 2rem;
-  
-  
+  height: 3rem;
 }
 .footer p {
   display: flex;

@@ -16,10 +16,10 @@ import profile from "./assets/ruyter-profile.jpg";
 export default function Home() {
   return (
     <>
-      {/* <video autoPlay loop muted  className={styles.video}>
+      <video autoPlay loop muted  className={styles.video} >
         <source src={'./back.mp4'} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
-      </video> */}
+      </video>
     <main className={styles.main}>
       
       <div>
@@ -91,7 +91,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://www.youtube.com/@canaldoruyter"
+          href="https://www.youtube.com/@RuyterPoubel"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
