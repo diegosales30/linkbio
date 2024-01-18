@@ -1,11 +1,19 @@
+.container{
+  height: calc(100vh - 3rem);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
-  min-height: 100vh;
-  height: calc(100vh - 6rem);
+  overflow: hidden;
+  /* padding: 3rem; */
+  /* min-height: 100vh;
+  height: calc(100vh - 6rem); */
   
   
 }
@@ -23,9 +31,10 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 220px;
+  /* margin-bottom: 220px; */
   max-width: 320px;
   text-align: center;
+  
   width: var(--max-width); 
   min-width: 320px;
   margin-top: 20px;

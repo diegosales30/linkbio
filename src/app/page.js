@@ -15,7 +15,7 @@ import profile from "./assets/ruyter-profile.jpg";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <video autoPlay loop muted  className={styles.video} >
         <source src={'./back.mp4'} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
@@ -114,6 +114,6 @@ export default function Home() {
         </p>
       </footer>
     </main>
-    </>
+  </div>
   );
 }
